@@ -1,0 +1,15 @@
+<nav>
+    <div class="nav-wrapper">
+        <a [routerLink]="['/countries']" routerLinkActive="active-link" class="brand-logo">
+            Where in the world?
+          </a>
+          
+    </div>
+    <div class="dark">
+        <button class="btn" (click)="toggleDarkMode()">
+            <img [src]="isDarkMode ? './moon1.svg' : './moon.svg'" alt="Dark Mode">
+            Dark Mode
+        </button>
+    </div>
+    
+</nav>

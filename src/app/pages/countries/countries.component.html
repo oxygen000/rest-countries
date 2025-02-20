@@ -1,0 +1,17 @@
+<main class="countries">
+    <nav class="nav">
+        <app-navbar></app-navbar>
+    </nav>
+    <section class="search-filter">
+        <ul>
+            <input class="Search" type="text" placeholder="Search for a country..." />
+            <select class="select" name="region" id="region" [(ngModel)]="selectedRegion" (change)="filterByRegion()">
+                <option value="">All Regions</option>
+                <option *ngFor="let region of regions" [value]="region">{{ region }}</option>
+            </select>
+        </ul>
+    </section>
+    <section class="countries-container">
+        <app-card [countries]="filteredCountries"></app-card>
+    </section>
+</main>

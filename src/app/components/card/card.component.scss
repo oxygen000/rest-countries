@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Satisfy&family=VT323&display=swap');
+
+$dark-blue-elements: hsl(209, 23%, 22%);
+$very-dark-blue-background: hsl(207, 26%, 17%);
+$very-dark-blue-text: hsl(200, 15%, 8%);
+$dark-gray-input: hsl(0, 0%, 52%);
+$very-light-gray-background: hsl(0, 0%, 98%);
+$white-elements: hsl(0, 0%, 100%);
+$Font: 'Nunito Sans', sans-serif;
+$Weights: 800;
+
+.countries-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.countries-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.country-card {
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    background-color: $dark-blue-elements;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.country-flag {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    
+}
+
+.country-info {
+    padding: 15px;
+    background-color: $dark-blue-elements;
+}
+
+.country-name {
+    font-size: 1.2rem;
+    color: $white-elements;
+    font-family:$Font ;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    background-color: $dark-blue-elements;
+    
+}
+
+.country-detail {
+    font-family:$Font ;
+    font-size: 0.9rem;
+    margin: 10px;
+    color: $white-elements;
+    background-color: $dark-blue-elements;
+
+}
+strong{
+    background-color: $dark-blue-elements;
+
+}
+
+

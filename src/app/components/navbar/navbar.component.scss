@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Satisfy&family=VT323&display=swap');
+
+$dark-blue-elements: hsl(209, 23%, 22%);
+$very-dark-blue-background: hsl(207, 26%, 17%);
+$very-dark-blue-text: hsl(200, 15%, 8%);
+$dark-gray-input: hsl(0, 0%, 52%);
+$very-light-gray-background: hsl(0, 0%, 98%);
+$white-elements: hsl(0, 0%, 100%);
+$Font: 'Nunito Sans', sans-serif;
+$Weights :  800;
+
+nav{
+    background: $dark-blue-elements;
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    .nav-wrapper{
+        background: none;
+    }
+    .dark {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+        background: none;
+
+    }
+    
+    .btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--text-color);
+        transition: color 0.3s ease-in-out;
+        color: $white-elements;
+
+    }
+    
+    .btn img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease-in-out;
+        background: none;
+        filter: invert(100%);
+    }
+    
+    .brand-logo{
+        color: $white-elements;
+        font-family: $Font;
+        font-weight: $Weights;
+        font-size: 1.5rem;
+        text-decoration: none;
+        background: none;
+        
+    }
+   
+}
+
